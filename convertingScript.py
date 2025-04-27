@@ -33,4 +33,4 @@ for file in folderScreaming:
             # writing row to file 
             writer.writerow([secondsElapsed, dBFS])
 
-print("finished w/not")
+print("finished converting to CSV")
