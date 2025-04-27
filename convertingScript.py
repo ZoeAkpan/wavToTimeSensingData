@@ -9,11 +9,12 @@ freq = 10
 folderScreaming = os.listdir('/Users/zoeakpan/wav to csv/screaming')
 
 for file in folderScreaming:
-    print(file)
-    # convert to audio object 
+    #print(file)
 
     # replace /Users/zoeakpan/wav to csv/screaming w/folder path you're iterating through
     filePath = os.path.join('/Users/zoeakpan/wav to csv/screaming', file)
+
+     # convert to audio object 
     audio = AudioSegment.from_wav(filePath)
 
     csv_filename = file.replace('.wav', '.csv')
